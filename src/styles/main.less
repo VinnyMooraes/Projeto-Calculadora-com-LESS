@@ -1,0 +1,98 @@
+@import 'variaveis.less';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    padding-top: 100px;
+    background-color: @corDeFundo;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    img{
+        height: 36px;
+        margin-bottom: 16px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    border: 02px solid #000;
+    border-radius: 05px;
+    padding: 16px;
+}
+form{
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-between;
+
+    input{
+        margin-right: 3px;
+        font-size: 24px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 3px;
+    }
+    button{
+        margin-left: 8px;
+        background-color: @corButtonAddNota;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 3px;
+        border-radius: 5px;
+        cursor: pointer;
+    
+        &:hover{
+            background-color: #054c1d;
+        }
+    }
+}    
+    table{
+        width: 100%;
+        td{
+            text-align: center;
+            font-size: 20px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(0,0,0, 0.3);
+            img {
+                height: 30px;
+            }
+        }
+        tbody img{
+            margin-top: 05px;
+            align-items: center;
+        }
+        th{
+            border-bottom: 02px solid black;
+            padding: 16px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+    .resultado{
+        padding: 8px;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.445);
+        border-radius: 3px;
+    }
+    .aprovado{
+        background-color: @corButtonAproved;
+    }
+    .reprovado{
+        background-color: @corButtonReproved;
+    }
